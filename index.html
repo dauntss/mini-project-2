@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Snippet Cheatsheet</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>CSS Snippet Cheatsheet</h1>
+    <p>Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code you copy.</p>
+  </header>
+  <article>
+    <fieldset>
+        <legend>
+          Flexbox Row
+        </legend>
+        <p>Use these three properties to create a Flexbox row layout.</p>
+        <pre><code>.flex {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}</code></pre>
+    </fieldset>
+    <fieldset>
+        <legend>
+          Flexbox Column
+        </legend>
+        <p>Use this to create a Flexbox column layout.</p>
+        <pre><code>.column {
+  display:flex;
+  flex-direction:column;
+}</code></pre>
+    </fieldset>
+    <fieldset>
+        <legend>
+          CSS Grid Layout
+        </legend>
+        <p>Build a 12-column input using CSS Grid.</p>
+        <pre><code>.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+}</code></pre>
+    </fieldset>
+    <fieldset>
+        <legend>
+          Linear Gradients
+        </legend>
+        <p>This will create a background linear-gradient from top left to bottom right.</p>
+        <pre><code>.linear-gradient-background {
+  background: linear-gradient(to bottom right, lightorange, pink, deeppink);
+}</code></pre>
+    </fieldset>
+    <fieldset>
+        <legend>
+          Box Transition Glow
+        </legend>
+        <p>Use transition and box shadow to glow on hover.</p>
+        <pre><code>.code-card .card-header {
+  border-radius:8px;
+  transition:all 0.5s ease-in-out;
+}
+
+.code-card:hover, .code-card:hover .code-header {
+    box shadow:inset 0 0 8px purple, 0 0 15px purple;
+}</code></pre>
+    </fieldset>    
+    <fieldset>
+        <legend>
+          Overlay Card with Title
+        </legend>
+        <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+        <pre><code>.card-header {
+  position:telative;
+  margin-top:-20px;
+}</code></pre>
+    </fieldset>
+  </article>
+  <footer>
+    Made with &hearts; and CSS
+  </footer>
+</body>
